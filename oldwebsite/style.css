@@ -1,0 +1,33 @@
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url("img/background 5.jpg"), url("background 3.jpg");
+    background-repeat: repeat repeat-x;
+    background-size: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-size: 50;
+    font-family: 'Electrolize', sans-serif;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+    font-style: normal;
+    font-size: 30;
+    font-family: 'Electrolize', sans-serif;
+}
+  
+p {
+    font-family: 'Electrolize', sans-serif;
+}
+
+
+
+
