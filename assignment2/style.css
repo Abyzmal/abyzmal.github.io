@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 5;
+    padding: 9px;
+}
+
+/* Color System using variables attached to RGB values to help set my color scheme
+
+The color scheme i chose is based on Mellow Dreams, sort of like the pastel color of marshmellows,
+I chose these range of colors for a distinct color palette based off a palette generator and 
+added my own variations to the color scheme. I felt this color theme presents a nice range from light to dark,
+it also creates a very particular feeling when looking at the layout.*/
+:root{
+    --colour-one: rgb(25,19,8);
+    --colour-two: rgb(50, 42, 38);
+    --colour-three: rgb(69, 75, 102);
+    --colour-four: rgb(103, 125, 183);
+    --colour-five: rgb(156, 163, 219);
+    --colour-six: rgb(250,180,250);
+
+    --border-one: dashed 6px white;
+}
+/* Grid Container system, uses a 6 Column by 12 Row layout to visualise the layouts composition accurately.
+
+As for the background fill, I went with black, as my theme is based on Mellow Dreams, I always thought
+of humans dreaming as a bubble of what we can percieve. Anything beyond our perception doesn't quite exist so
+I represented it with blackn as nothingness. */
+#grid-container-bg{
+    background-color: black;
+    width: 100vw;
+    height: 360vh;
+    /* width 100vw
+    height: 177vw; */
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    column-gap: 8px;
+    row-gap: 12px;
+
+}
+
+.grid-item-one{
+    background-color: var(--colour-six);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.grid-item-two{
+    background-color: var(--colour-five);
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.grid-item-three{
+    background-color: var(--colour-five);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.grid-item-four{
+    background-color: var(--colour-four);
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.grid-item-five{
+    background-color: var(--colour-four);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.grid-item-six{
+    background-color: var(--colour-three);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 12;
+}
+
+.grid-item-seven{
+    background-color: var(--colour-two);
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+.grid-item-eight{
+    background-color: var(--colour-one);
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
