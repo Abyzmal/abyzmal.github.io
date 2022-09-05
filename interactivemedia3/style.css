@@ -12,25 +12,42 @@
   --col-03:#5252ff;
   --col-04:#b6e878;
 
-  /* Night Mode Colours Options*/
+  /* Light Mode Colours Options Variables, I went through several iterations of this colour palette to find something that worked with the background I found, i wanted a very
+  simple and minamalist themed feel. I went with a dark blue and green and used that to match the dye splatter background I had found.*/
   --col-05:#1A3843;
   --col-06:#3D7944;
   --col-07:#413905; 
 
-  /* Light Mode Colours Options*/
+  /* Dark Mode Colours Options Variables, i made these varaibles while brainstorming a colour scheme and tried out numerous colours, i also this website 
+  https://imagecolorpicker.com/color-code/3d7944
+  to determine whether some colours are good on black. The pink worked really well so I paired that up with a edited version of a nebula galaxy background i found on pixelbay */
   --col-08:#e6a6d1; 
   --col-09:#e6c8a6;
   --col-10:#a6e6e1;
 
 
-  /* Background Image Variables linked to modeSwitch.js*/
+  /* Background Image Variables linked to modeSwitch.js
+     I went for a high contrast theme, like pink on black and green on white, i was inspired when I looked at the pastel colours on some coding colours, one of my teachers
+    has a different colour scheme of blue, yellow and pink in a different arrangement, and it really stood out to me, so I wanted to make that the basis of my color schemes,
+    since the code enables for dark and light mode, i use to frequently use these contrast themes on my browser and wanted to have two differing themes to switch between but
+     still fulfilled the purpose of being light/night mode.*/
   --back-01:url(img/background1.jpg);
   --back-02:url(img/background2.jpg);
-
+/* original images links: 
+  https://pixabay.com/vectors/watercolor-turquoise-painting-4116932/?download
+  Dye background
+  
+  https://pixabay.com/photos/milky-way-stars-night-sky-2695569/
+  Sky background
+  
+  the reason I chose these backgrounds was because I felt they had the potential when edited to be nice background placeholders and add a very subtle feel/aesthetic to the
+  page, hence the light/dark mode gives when you use it quite often, makes you visualise the web page a bit differently, so I felt like steering the direction a little with colors
+  and driving each page to have a unique feel so you can enjoy both uses of Light/Dark with it being more than just a utility feature. */
   font-size: 16px;
 }
 
- /* Slide in for Title upon loading in.*/
+ /* Slide in for Title upon loading in. I added this function because i felt the layout was rather linear, left to right and up and down. so text sliding in felt like a neat feature
+  as everyone is already used to the up, down, left, right feeling of navigating websites, it feels natural to make use of this space and include something. */
 h2 {
   animation-duration: 3s;
   animation-name: slidein;
@@ -54,7 +71,7 @@ h2 {
   }
 }
 
-
+/* Body text options and background settings, centering and the background variable is changed here through the script code. */
 body{
   padding: 1rem;
   background-color: var(--col-02);
@@ -63,7 +80,7 @@ body{
   background-image: var(--back-02);
   background-position: center;
 }
-
+/* Colour cycle options for the links and header. */
 a {
   animation: colourCycle  7s infinite;
 }
@@ -71,6 +88,8 @@ a {
 h1 {
   animation: colourCycle  7s infinite;
 }
+
+/* The color cycle settings, swaps between two colours and resets towards the first color. */
 
 @keyframes colourCycle {
   0% {
@@ -88,7 +107,7 @@ h1 {
 section{
   margin-bottom: 2rem;
 }
-
+/* Font Settings, I've installed 3 fonts into the file, so there is some variety. */
 h1{
   font-size: 3rem;
   font-family: 'Bebas Neue', sans-serif;
