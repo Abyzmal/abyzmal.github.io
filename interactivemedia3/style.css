@@ -1,0 +1,172 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+
+  /* Night Mode Colours Options*/
+  --col-05:#1A3843;
+  --col-06:#3D7944;
+  --col-07:#413905; 
+
+  /* Light Mode Colours Options*/
+  --col-08:#e6a6d1; 
+  --col-09:#e6c8a6;
+  --col-10:#a6e6e1;
+
+
+  /* Background Image Variables linked to modeSwitch.js*/
+  --back-01:url(img/background1.jpg);
+  --back-02:url(img/background2.jpg);
+
+  font-size: 16px;
+}
+
+ /* Slide in for Title upon loading in.*/
+h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+  transition: color ease-in 1s;
+  background-image: var(--back-02);
+  background-position: center;
+}
+
+a {
+  animation: colourCycle  7s infinite;
+}
+
+h1 {
+  animation: colourCycle  7s infinite;
+}
+
+@keyframes colourCycle {
+  0% {
+    color: var(--col-05)
+  }
+  50% {
+    color: var(--col-06)
+  }
+  100% {
+    color: var(--col-05)
+  }
+
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: 'Electrolize', sans-serif;
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+  font-family: 'Fjalla One', sans-serif;
+  
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+}
