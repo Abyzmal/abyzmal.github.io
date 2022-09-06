@@ -7,4 +7,4 @@ categories : RMIT CCS
 
 # P5 sketch upload
 
-<iframe width=400 height=442 src="https://editor.p5js.org/Abyzmal/full/P7Pu8a4mY"></iframe>
+<iframe width=576 height=324 src="https://editor.p5js.org/Abyzmal/full/P7Pu8a4mY"></iframe>
