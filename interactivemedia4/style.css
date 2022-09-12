@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+
+:root{
+  --col-01:#222323;
+  --col-02:#f0f6f0;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+/* Default colours  */
+
+  --col-01a:#bcd4de;
+  --col-02a:#A5CCD1;
+  --col-03a:#A0B9BF;
+  --col-04a:#9DACB2;
+  --col-05a:#949BA0;
+/* Colour scheme I had generated, but it feels too light so I decided to make a new version with Default as reference*/
+
+--col-01b:#000B0F;
+--col-02b:#D7FAFF;
+--col-03b:#5591FF;
+--col-04b:#FFC5F4;
+
+}
+
+body{
+  background-color: var(--col-01b);
+  color: var(--col-02b);
+  padding: 2vw;
+  font-family: 'Bebas Neue', sans-serif;
+}
+/* Added some new fonts, I felt it could use a spice up to feel a little bit more less like Wikipedia.  */
+a {
+  color: var(--col-04b);
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+}
+a:hover {
+  color: var(--col-03b);
+  text-decoration: underline;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+hr {
+  margin-bottom: 2vh;
+}
+
+#list-filter-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.FilterCategoryWrapper{
+  display: flex;
+}
+
+/* this is the filter category heading */
+summary {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.FilterSelector {
+  font-size: 3rem;
+  background-color: transparent;
+  color: var(--col-02b);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+.FilterSelector:hover {
+  color: var(--col-03b);
+}
+.FilterSelector:active {
+  color: var(--col-03b);
+}
+.ActiveCategory {
+  background-color: var(--col-02b);
+  color: var(--col-01b); 
+}
+
+
+#recipe-list-wrapper{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.RecipeCardWrapper{
+  height: 30rem;
+  padding: 1rem;
+  border: dotted var(--col-02b) 2px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+ .RecipeCardWrapper:hover{
+  border: solid var(--col-02b) 3px;
+  cursor: pointer;
+} 
+.RecipeImg{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.RecipeTitle{
+  font-size: 2rem;
+}
+.RecipeAuthor{
+  font-size: 1.5rem;
+}
+
+
+/* for screens over 768px wide */
+@media all and (min-width: 768px) {
+  
+  hr {
+    margin-bottom: 2vw;
+  }
+
+  #list-filter-wrapper{
+    flex-direction: row;
+  }
+
+  .FilterSelector {
+    text-align: unset;
+    width: unset;
+  }
+  
+}
