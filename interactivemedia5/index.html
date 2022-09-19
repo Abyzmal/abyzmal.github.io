@@ -1,0 +1,101 @@
+<!-- This exercise is built off the MDN Video and Audio APIs tutorial written by MDN contributors  -->
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs -->
+<!-- The base files from the example were modified and filled in via the tutorial and some extra commenting by Patrick McMahon -->
+<!-- Orginal Files: https://github.com/mdn/learning-area/blob/main/javascript/apis/video-audio/start/media-player-start.zip -->
+
+<!DOCTYPE HTML>
+<html lang="en-gb">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Video player example</title>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="player">
+
+      <video id="media" controls>
+        <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+      </video>
+
+      <!-- <audio id="media" muted="false" controls>
+        <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/CHAABI-MAROC-MIX_CHAABI-MIX.mp3" type="audio/mp3">
+      </audio> -->      
+
+      <div class="controls video-controls">
+      <!-- <div class="controls audio-controls"> -->
+        <button class="backwardmin" data-icon="p" aria-label="backwardmin"></button>
+        <button class="rwd" data-icon="B" aria-label="rewind"></button>
+        <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+        <button class="stop" data-icon="S" aria-label="stop"></button>
+        <div class="timer"><div class="timer-bar"></div><span aria-label="timer" class="timer-span">00:00</span></div>
+        <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+        <button class="forwardmin" data-icon="j" aria-label="forwardmin"></button>
+        <input class="vol" type="range" min="0" max="1" step="0.1"> </input>
+      </div>
+    </div>
+    <script src="custom-player.js"></script>
+
+
+    
+  </body>
+</html>
+
+<!-- Due to file size I've instead provided links to the various media that you can include for the different contexts -->
+<!-- Just put the links into the src attribute on the media player -->
+
+<!-- Music to relax/study to -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3 -->
+<!-- If you use erokia_ambient-wave-56-msfxp7-78.mp3 please include the following on your page -->
+
+<!-- <p class="attribution">
+  "<a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia/sounds/516902">Ambient Wave 56 - (MSfxP7 - 78)</a>" by 
+  <a target="_blank" rel="noopener noreferrer" href="https://freesound.org/people/Erokia">Erokia</a> is licensed under 
+  <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+  </a>. 
+</p>  -->
+
+
+<!-- Cooking/crafting tutorial video -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4 -->
+<!-- If you use berry-bunch_handheld-windmill-fan.mp4 please include the following on your page -->
+<!-- <p class="attribution">
+  "<a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/719005078">Art Time, Handheld Windmill / Fan</a>" by 
+  <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/berrybunchfamily">theBerry Bunch</a> is licensed under 
+  <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/?ref=openverse">CC BY-NC 4.0 
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+  </a>. 
+</p>  -->
+
+
+<!-- Music video -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4 -->
+<!-- No attribution needed -->
+
+
+<!-- DJ mix -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/CHAABI-MAROC-MIX_CHAABI-MIX.mp3 -->
+<!-- If you use CHAABI-MAROC-MIX_CHAABI-MIX.mp3 please include the following on your page -->
+<!--  <p class="attribution">
+  "<a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/track/739121">CHAABI MAROC MIX</a>" by 
+  <a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/artist/367146/CHAABI_MIX">CHAABI MIX</a> is licensed under 
+  <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/3.0/?ref=openverse">CC BY-NC-SA 3.0 
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+  </a>. 
+</p>  -->
+
+
+<!-- Music album -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3 -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Dry-Down-feat-Ben-Snaath.mp3 -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Leapt.mp3 -->
+<!-- https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Water-Feature.mp3 -->
+<!-- No attribution needed -->
+
