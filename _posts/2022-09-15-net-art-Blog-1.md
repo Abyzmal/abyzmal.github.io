@@ -5,10 +5,13 @@ date       : 2022-09-15
 categories : RMIT CCS
 ---
 
-https://youtu.be/POn4cZ0jL-o
-https://youtu.be/6z7GQewK-Ks
-https://youtu.be/vIrecKTVe94
-https://youtu.be/DEHsr4XicN8
+<iframe width="560" height="315" src="https://www.youtube.com/embed/POn4cZ0jL-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6z7GQewK-Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vIrecKTVe94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DEHsr4XicN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Hello fellow human coder reading this blog, I am actually struggling on figuring out what to do for Net Art assignment. 
 
