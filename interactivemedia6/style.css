@@ -1,0 +1,43 @@
+
+body {
+    background-color: black;
+    color: white;
+    background-image: url("img/city on fire edit3.jpg");
+    background-repeat: repeat repeat-x;
+    background-size: 100%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-size: 50;
+    font-family: 'Electrolize', sans-serif;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+    font-style: normal;
+    font-size: 30;
+    font-family: 'Electrolize', sans-serif;
+}
+  
+p {
+    font-family: 'Electrolize', sans-serif;
+}
+
+.rotate {
+    width: 450px;
+    animation: rotation 47s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
